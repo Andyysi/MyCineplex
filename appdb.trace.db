@@ -1,0 +1,9 @@
+2023-02-09 19:03:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" not found (this database is empty); SQL statement:
+select customer0_.customer_id as customer1_0_, customer0_.createdate as createda2_0_, customer0_.email as email3_0_, customer0_.firstname as firstnam4_0_, customer0_.lastname as lastname5_0_, customer0_.login as login6_0_, customer0_.password as password7_0_, customer0_.updatedate as updateda8_0_ from customer customer0_ [42104-214]
+2023-02-09 19:03:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" not found (this database is empty); SQL statement:
+select customer0_.customer_id as customer1_0_, customer0_.createdate as createda2_0_, customer0_.email as email3_0_, customer0_.firstname as firstnam4_0_, customer0_.lastname as lastname5_0_, customer0_.login as login6_0_, customer0_.password as password7_0_, customer0_.updatedate as updateda8_0_ from customer customer0_ [42104-214]
+2023-02-09 19:06:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" not found (this database is empty); SQL statement:
+select customer0_.customer_id as customer1_0_, customer0_.createdate as createda2_0_, customer0_.email as email3_0_, customer0_.firstname as firstnam4_0_, customer0_.lastname as lastname5_0_, customer0_.login as login6_0_, customer0_.password as password7_0_, customer0_.updatedate as updateda8_0_ from customer customer0_ [42104-214]
