@@ -18,9 +18,9 @@ public class CustomerserviceImpl implements Customerservice {
 
     @Override
     public Customer Createcustomer(Customer customer) {
-        if (customer.getLogin()==null)
+        if (customer.getLogin() == null)
             throw new UnsupportedLoginNameException("Login name cannot be Null");
-        return repo.save(customer );
+        return repo.save(customer);
     }
 
     @Override
@@ -31,5 +31,13 @@ public class CustomerserviceImpl implements Customerservice {
     @Override
     public Optional<Customer> getCustomerbyId(Integer id) {
         return repo.findById(id);
+    }
+
+    public List<Customer> createAll(List<Customer> customers) {
+        return repo.saveAll(customers);
+    }
+
+    public List<Customer> getCustomerByLastname(String lastname) {
+        return repo.getCustomersByLastname(lastname);
     }
 }

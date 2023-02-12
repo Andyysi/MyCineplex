@@ -1,6 +1,7 @@
 package com.example.mycineplex.entity;
 
 import lombok.Data;
+import net.bytebuddy.implementation.bind.MethodDelegationBinder;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -11,7 +12,7 @@ import java.util.Date;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "CUSTOMER_ID")
+    @Column(name = "CUSTOMER_ID", unique = true, nullable = false)
     private Integer id;
     private String firstname;
     private String lastname;

@@ -14,7 +14,7 @@ public class MyCineplexApplication {
     public static void main(String[] args) {
         ApplicationContext context =
         SpringApplication.run(MyCineplexApplication.class, args);
-        System.out.println();
+
     }
 
 }

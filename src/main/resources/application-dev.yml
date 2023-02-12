@@ -6,7 +6,7 @@ spring:
     url: jdbc:h2:./appdb
     username: sa
     password:
-jpa:
-    hibernate:
-      ddl-auto: create
     show-sql: true
+  jpa:
+    hibernate:
+      ddl-auto: update
