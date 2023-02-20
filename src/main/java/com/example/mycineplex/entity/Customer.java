@@ -1,10 +1,10 @@
 package com.example.mycineplex.entity;
 
 import lombok.Data;
-import net.bytebuddy.implementation.bind.MethodDelegationBinder;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
@@ -26,5 +26,8 @@ public class Customer {
     private Boolean IsLoggedIn;
     private Date createdate;
     private Date updatedate;
+
+    @OneToMany(mappedBy = "customer")
+    private List<Order> order;
 
 }

@@ -31,3 +31,24 @@ select customer0_.customer_id as customer1_0_, customer0_.createdate as createda
 2023-02-09 20:03:49 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" not found (this database is empty); SQL statement:
 select customer0_.customer_id as customer1_0_, customer0_.createdate as createda2_0_, customer0_.email as email3_0_, customer0_.firstname as firstnam4_0_, customer0_.lastname as lastname5_0_, customer0_.login as login6_0_, customer0_.password as password7_0_, customer0_.updatedate as updateda8_0_ from customer customer0_ [42104-214]
+2023-02-12 16:39:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]order CASCADE "; expected "identifier"; SQL statement:
+drop table if exists order CASCADE  [42001-214]
+2023-02-12 16:39:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]order (id binary(255) not null, movie_name varchar(255), order_date varchar(255), showdate varchar(255), total_amount double, primary key (id))"; expected "identifier"; SQL statement:
+create table order (id binary(255) not null, movie_name varchar(255), order_date varchar(255), showdate varchar(255), total_amount double, primary key (id)) [42001-214]
+2023-02-12 16:39:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table customer_order add constraint FKiixm9fjfl1hb2v96yxvne71dy foreign key (order_id) references [*]order"; expected "identifier"; SQL statement:
+alter table customer_order add constraint FKiixm9fjfl1hb2v96yxvne71dy foreign key (order_id) references order [42001-214]
+2023-02-12 16:42:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]order CASCADE "; expected "identifier"; SQL statement:
+drop table if exists order CASCADE  [42001-214]
+2023-02-12 16:42:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]order (id binary(255) not null, movie_name varchar(255), order_date varchar(255), showdate varchar(255), total_amount double, primary key (id))"; expected "identifier"; SQL statement:
+create table order (id binary(255) not null, movie_name varchar(255), order_date varchar(255), showdate varchar(255), total_amount double, primary key (id)) [42001-214]
+2023-02-12 16:42:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table customer_order add constraint FKiixm9fjfl1hb2v96yxvne71dy foreign key (order_id) references [*]order"; expected "identifier"; SQL statement:
+alter table customer_order add constraint FKiixm9fjfl1hb2v96yxvne71dy foreign key (order_id) references order [42001-214]
+2023-02-12 16:44:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]order CASCADE "; expected "identifier"; SQL statement:
+drop table if exists order CASCADE  [42001-214]
