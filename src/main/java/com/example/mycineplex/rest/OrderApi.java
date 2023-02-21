@@ -20,9 +20,13 @@ public class OrderApi {
 
 
     @PostMapping("/{id}/order")
-    public Order addOrder(@PathVariable int id, @RequestBody Order order) {
+    public Order createorder(@PathVariable("id") int id, @RequestBody Order order) {
         return service.createOrder(id, order);
 
+    }
+    @PostMapping("/{id}/orders")
+    public List<Order> createAll(@PathVariable("id") int id, @RequestBody List<Order> orders) {
+        return service.createAll(id, orders );
     }
     @GetMapping("/orders")
     public List<Order> getAll (){

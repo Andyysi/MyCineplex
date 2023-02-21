@@ -21,13 +21,13 @@ public class OrderServiceImpl implements OrderService {
     private final Customerservice customerservice;
 
     @Override
-    public Order createOrder(int cust_id,Order order) {
-        Optional<Customer> customerbyId = customerservice.getCustomerbyId(cust_id);
+    public Order createOrder(int id,Order order) {
+        Optional<Customer> customerbyId = customerservice.getCustomerbyId (id);
         if (customerbyId.isPresent()) {
          return repo.save(order);
         }
         else{
-            throw new CustomerNotFoundException(String.format("Customer with this id Does not Exist"),cust_id);
+            throw new CustomerNotFoundException(String.format("Customer with this id Does not Exist"),id);
         }
     }
 
@@ -42,7 +42,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public List<Order> createAll(List<Order> order) {
-        return repo.saveAll(order);
+    public List<Order> createAll(int id, List<Order> orders) {
+        return repo.saveAll(orders);
     }
 }
