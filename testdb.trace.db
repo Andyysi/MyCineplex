@@ -1,0 +1,3 @@
+2023-03-02 13:00:42 jdbc[19]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM CUSTOMER ID [*]3"; SQL statement:
+SELECT * FROM CUSTOMER ID 3 [42000-214]

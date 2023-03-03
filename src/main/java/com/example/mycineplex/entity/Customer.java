@@ -28,6 +28,6 @@ public class Customer {
     private Date updatedate;
 
     @OneToMany(mappedBy = "customer")
-    private List<Order> order;
+    private List<Order> orders;
 
 }
